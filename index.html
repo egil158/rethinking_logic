@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Beyond Symbolic Mind: Re-evaluating the Logical Model of Intelligence">
+  <meta name="keywords" content="Logic, AI, Symbolic Computation, Cognitvie Science, Intelligence">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond Symbolic Mind: Re-evaluating the Logical Model of Intelligence</title>
+
+  <!-- Open Graph for LinkedIn/Facebook -->
+  <meta property="og:title" content="Beyond Symbolic Mind: Re-evaluating the Logical Model of Intelligence">
+  <meta property="og:description"
+    content="Full paper, key figures, and interactive framework reframing social cognition as status recognition and power navigation.">
+  <meta property="og:image" content="https://egil158.github.io/social_cog/static/images/ToM.png">
+  <meta property="og:url" content="https://egil158.github.io/social_cog/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Beyond Symbolic Mind: Re-evaluating the Logical Model of Intelligence">
+  <meta name="twitter:description"
+    content="Full paper, key figures, and interactive framework reframing social cognition as status recognition and power navigation.">
+  <meta name="twitter:image" content="https://egil158.github.io/social_cog/static/images/ToM.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div> 
+    </div> -->
+
+  </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Beyond Symbolic Mind: Re-evaluating the Logical Model of
+              Intelligence</h1>
+
+            <!-- <h2 class="subtitle is-4 has-text-grey">
+              Survey Paper
+            </h2> -->
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://egil158.github.io/" target="_blank" rel="noopener noreferrer">Egil Diau</a>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>National Taiwan University</span>
+              <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./static/pdf/Rethinking_Logic.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://zenodo.org/records/17858758"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Zenodo</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+        <img src="./static/images/logic.png" alt="Project teaser"
+          style="width: 400px; height: 400px; object-fit: cover; border-radius: 24px; display: block; margin: 0 auto 2rem;">
+        <h2 class="subtitle has-text-centered">
+          <span style="font-weight: 900; font-size: 1.1em; letter-spacing: 0.5px;">TL/DR:</span>
+          &nbsp; Symbolic computation is often criticized for weak optimization and generalization, but its core failure
+          is structural: it requires every intermediate condition to co-exist and every operation to be
+          world-instantiable, so a single failed grounding collapses the entire chain. Human cognition never seeks such
+          total realizability; it works through partial information and non-exhaustive specification, which is why
+          symbolic inference is not how thought operates, but a formal ideal dependent on conditions the world does not
+          provide.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <div class="columns is-centered is-variable is-6">
+
+          <!-- Card 1: Symbolic Origins -->
+          <div class="column has-text-centered">
+            <img src="./static/images/his.png" alt="Symbolic Inference Origins"
+              style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 1rem;">
+            <p><strong>Symbolic Inference: From Rationality to AI</strong><br>
+              Symbolic logic entered early AI not as one technique, but as the inherited model of
+              rational thought from philosophy. It treated intelligence as explicit operators and
+              fully specified chains of deduction rather than world-bound, partial cognition.
+            </p>
+          </div>
+
+          <!-- Card 2: Engineering Misdiagnosis -->
+          <div class="column has-text-centered">
+            <img src="./static/images/broke.png" alt="Symbolic AI Collapse"
+              style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 1rem;">
+            <p><strong>Symbolic AI: Cold Winter, Wrong Explanation</strong><br>
+              When symbolic systems failed under variation and could not generalize, the collapse was
+              blamed on optimization and scaling. Yet the deeper limit is structural: long-form inference
+              assumes jointly realizable conditions and world-instantiable operations the world rarely
+              sustains.
+            </p>
+          </div>
+
+          <!-- Card 3: Cognition as Non-Total Architecture -->
+          <div class="column has-text-centered">
+            <img src="./static/images/human.png" alt="Human Cognition Differentiation"
+              style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 1rem;">
+            <p><strong>Human Cognition: Partial, Not Symbolic</strong><br>
+              Human cognition succeeds not by completing chains, but by never requiring total
+              realizability. It operates through partial information, underspecified states, and
+              pattern-based inference—making it fundamentally distinct from symbolic logic rather
+              than a weaker version of it.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Why Statistics &amp; Causal Inference Need Rethinking</h2>
+          <div class="content has-text-justified">
+
+            <p>
+              Across psychology, neuroscience, and applied economics, many findings fail to replicate or disappear
+              outside the
+              lab. Even without fraud, statistically “significant” effects often fail to match real-world behavior.
+              These
+              breakdowns are not discipline-specific—they reflect a deeper mismatch between how real systems generate
+              phenomena and how statistical inference interprets the data left behind.
+            </p>
+
+            <p>
+              In practice, statistics and causal inference operate entirely within data space. But data are already a
+              compressed projection of a much higher-dimensional world; most semantic structure is lost before analysis
+              even
+              begins. Once mechanisms are removed in this projection, no amount of geometry or factorization applied to
+              the
+              remaining traces can reconstruct how the system actually works.
+            </p>
+
+            <p>
+              Many failures stem from two assumptions: that alignment in data space reflects structure in the underlying
+              system, and that probabilistic factorizations reveal the process that generated the outcomes. Yet these
+              tools
+              operate in a domain where the mechanism is no longer present, which is why they break even when used
+              correctly.
+            </p>
+
+          </div>
+        </div>
+      </div> -->
+
+      <section class="section">
+        <div class="container">
+          <div class="has-text-centered">
+            <h2 class="title is-3 mb-2">The Two Faces of Symbolic Validity</h2>
+            <div class="underline mx-auto"></div>
+            <p class="subtitle is-6 has-text-grey mt-3">
+              Long-chain symbolic inference only works when two world-level requirements are met at once.
+            </p>
+          </div>
+
+          <div class="columns is-variable is-6 is-multiline mt-6 equalize">
+
+            <!-- 1. Jointly Realizable Conditions -->
+            <div class="column is-half-tablet is-half-desktop">
+              <div class="box def-card is-tom">
+                <header class="card-head mb-3">
+                  <div class="head-left">
+                    <span class="def-icon">🧱</span>
+                    <h3 class="title is-5 mb-0">Jointly Realizable Conditions</h3>
+                  </div>
+                  <button class="button is-light is-small copy-btn"
+                    data-copy="Symbolic inference assumes that every intermediate condition in a chain can co-exist. The joint state must be realizable, not just individually conceivable. If the world cannot support the full intersection of predicates, the derivation has no target state to land on.">
+                    Copy
+                  </button>
+                </header>
+                <div class="content flex-1">
+                  Every condition must have a realizable joint event in the world.
+                  If the intersection cannot exist, the entire chain loses validity.
+                </div>
+                <p class="tag is-light mt-3 stick-bottom">No realizable joint event → no valid inference</p>
+              </div>
+            </div>
+
+            <!-- 2. World-Instantiable Operations -->
+            <div class="column is-half-tablet is-half-desktop">
+              <div class="box def-card is-tom">
+                <header class="card-head mb-3">
+                  <div class="head-left">
+                    <span class="def-icon">⚙️</span>
+                    <h3 class="title is-5 mb-0">World-Instantiable Operations</h3>
+                  </div>
+                  <button class="button is-light is-small copy-btn"
+                    data-copy="Every logical step implicitly assumes a real mechanism that could carry out that transition. If no such mechanism exists, the operator is only a syntactic move, not a possible change in the world, and the validity of the chain collapses as soon as it touches reality.">
+                    Copy
+                  </button>
+                </header>
+                <div class="content flex-1">
+                  Each operator must map to a possible world transition.
+                  If no mechanism exists, the step is only syntactic.
+                </div>
+                <p class="tag is-light mt-3 stick-bottom">No mechanism → no valid transition</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">The Core Bottleneck of Symbolic Inference</h2>
+          <div class="content has-text-justified">
+            <p>
+              Symbolic inference requires extensive, fully specified conditions before it can operate.
+              But once such information is in place, its growth becomes purely combinatorial: the system
+              expands possible assignments without generating new structure or modifying the predicates
+              themselves. More information does not produce more understanding—it produces more
+              permutations of what is already assumed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <style>
+        /* underline (optional)
+  .underline {
+    width: 120px; height: 3px; border-radius: 999px;
+    background: linear-gradient(90deg, #6c63ff, #2ac3ff);
+  } */
+
+        /* 讓四張卡等高 */
+        .equalize .column {
+          display: flex;
+        }
+
+        .equalize .def-card {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgba(0, 0, 0, .08);
+          transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+        }
+
+        .equalize .def-card:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+          border-color: rgba(0, 0, 0, .12);
+        }
+
+        /* 頭部左右區塊：維持等高需要固定最小高度，避免標題長短導致跳動 */
+        .card-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 48px;
+        }
+
+        .head-left {
+          display: inline-flex;
+          align-items: center;
+          gap: .65rem;
+        }
+
+        .def-card .def-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          font-size: 18px;
+          background: rgba(108, 99, 255, .10);
+        }
+
+        .def-card.is-summary .def-icon {
+          background: rgba(255, 196, 0, .12);
+        }
+
+        /* 內容撐開，tag 釘底 */
+        .flex-1 {
+          flex: 1;
+        }
+
+        .stick-bottom {
+          margin-top: auto;
+        }
+
+        /* 深色模式 */
+        @media (prefers-color-scheme: dark) {
+          .underline {
+            background: linear-gradient(90deg, #9aa5ff, #7dd3fc);
+          }
+
+          .def-card {
+            border-color: rgba(255, 255, 255, .08);
+          }
+
+          .def-card:hover {
+            border-color: rgba(255, 255, 255, .16);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .5);
+          }
+
+          .box.def-card {
+            background: rgba(255, 255, 255, .03);
+          }
+        }
+      </style>
+
+      <script>
+        // Minimal copy handler
+        document.addEventListener('click', (e) => {
+          const btn = e.target.closest('.copy-btn');
+          if (!btn) return;
+          const text = btn.getAttribute('data-copy') || '';
+          navigator.clipboard.writeText(text).then(() => {
+            const original = btn.textContent.trim();
+            btn.textContent = 'Copied!';
+            setTimeout(() => (btn.textContent = original), 1200);
+          });
+        });
+      </script>
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Symbolic logic has long been treated as a model of intelligence, motivating rule-based inference and
+              classical approaches to artificial intelligence. Yet systems built on explicit symbolic derivation have
+              proven difficult to optimize, brittle under variation, and unable to generalize beyond tightly specified
+              domains.
+            </p>
+            <p>
+              These limitations are not merely engineering obstacles. The validity of long-chain symbolic
+              inference depends on conditions that the world rarely affords: each step requires jointly realizable
+              states and transition relations that must remain constructible throughout the chain. When any such
+              condition cannot be instantiated, collapse is systemic rather than local.
+            </p>
+            <p>
+              Human cognition, by contrast,
+              operates under partial information, indeterminate predicates, and incomplete state specification,
+              functioning without the requirement that all intermediate relations be jointly defined. This work
+              re-evaluates the long-standing assumption that logical form constitutes the operative architecture of
+              intelligence and clarifies why symbolic inference, though formally coherent, cannot serve as an operative
+              account of cognition.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Why It Matters?</h2>
+          <div class="content has-text-justified">
+
+            <p>
+              For a century, intelligence was equated with long-form symbolic reasoning—depth,
+              precision, multi-step logic. Its image shaped philosophy, early AI, and even
+              contemporary models of cognition. Yet almost no one examined its world-level
+              requirements: that joint events must exist and operations must be realizable.
+              Once those conditions are confronted, the framework collapses—not because logic
+              is incorrect, but because the world cannot supply what it presupposes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Cite This Work</h2>
+
+          <div class="box cite-box has-text-left">
+            <button class="button is-primary is-light is-rounded is-small cite-copy" data-target="cite-zenodo">
+              📋 Copy
+            </button>
+
+            <pre id="cite-zenodo"><code>@misc{diau_2025_17858758,
+  author       = {Diau, Egil},
+  title        = {Beyond Symbolic Mind: Re-evaluating the Logical
+                   Model of Intelligence
+                  },
+  month        = dec,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17858758},
+  url          = {https://doi.org/10.5281/zenodo.17858758},
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        :root {
+          --cite-bg: #f7f7f9;
+          --cite-border: #e6e6ea;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --cite-bg: #1f1f24;
+            --cite-border: #32323a;
+          }
+        }
+
+        .cite-box {
+          position: relative;
+          background: var(--cite-bg);
+          border: 1px solid var(--cite-border);
+          border-radius: 12px;
+          padding: 1.25rem 1.25rem 1rem;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+          text-align: left;
+        }
+
+        .cite-box .cite-copy {
+          position: absolute;
+          top: .75rem;
+          right: .75rem;
+        }
+
+        .cite-box pre {
+          margin: 0;
+          padding: .5rem 0 0 0;
+          white-space: pre;
+          overflow-x: auto;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+          font-size: 0.95rem;
+          line-height: 1.55;
+        }
+
+        .cite-box pre code {
+          background: transparent !important;
+        }
+      </style>
+
+      <script>
+        function copyBib(btn) {
+          const id = btn.getAttribute('data-target');
+          const el = document.getElementById(id);
+          const text = el ? el.innerText.trim() : '';
+          if (!text) return;
+
+          navigator.clipboard.writeText(text).then(() => {
+            const old = btn.innerHTML;
+            btn.innerHTML = "✅ Copied!";
+            btn.classList.remove("is-primary", "is-light");
+            btn.classList.add("is-success");
+            setTimeout(() => {
+              btn.innerHTML = old;
+              btn.classList.remove("is-success");
+              btn.classList.add("is-primary", "is-light");
+            }, 1500);
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll('.cite-copy').forEach(btn => {
+            btn.addEventListener('click', () => copyBib(btn));
+          });
+        });
+      </script>
+
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Implications</h2>
+          <div class="content has-text-justified">
+            <p>
+              By grounding high-level social functions in observable cognitive behavior, this survey opens a path toward
+              modeling society from the bottom up—using mechanisms, not metaphors.
+            </p>
+            <p>
+              This approach dissolves the artificial boundaries between disciplines like psychology, anthropology,
+              political science, and economics. What were once treated as separate domains of “mind,” “culture,” or
+              “institutions” can now be understood as structured expressions of the same underlying cognitive functions.
+            </p>
+            <p>
+              Rather than studying society through detached abstractions, we can begin treating it as a compositional
+              system—one that emerges from shared behavioral capacities across species. This reframing lays the
+              groundwork for a unified science of social cognition, grounded not in speculation, but in mechanism.
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demo</h2>
+        <div class="publication-video">
+          <img src="./static/images/underconstruction.png" alt="Project teaser" style="width:100%; max-width:400px; border-radius: 8px;">
+        </div>
+      </div>
+    </div> -->
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered" style="font-size: 0.9rem; line-height: 1.6; margin-top: 1rem;">
+            <p>
+              Adapted from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies template</a>. Licensed
+              under
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
